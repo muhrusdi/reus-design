@@ -1,22 +1,5 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import Row from './components/Grid/Row'
+import Col from './components/Grid/Col'
+import Badge from './components/Badge'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export { Badge, Row, Col }
