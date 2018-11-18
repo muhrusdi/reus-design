@@ -34,7 +34,8 @@ class Container extends Component {
       <div 
         style={{
           paddingLeft: gutter,
-          paddingRight: gutter
+          paddingRight: gutter,
+          margin: '0 auto'
         }}
         className={classes.join(' ')}>
         { children }

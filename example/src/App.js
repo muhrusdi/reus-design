@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader'
-import { Row, Col, Badge } from 'reus'
+import { Row, Container, Col, Badge } from 'reus'
 
 class App extends Component {
   render () {
     return (
       <div>
-        <div>
-          <Row>
+        <Container md>
+          <Row gutter={10}>
             <Col>
               <div>
                 <Badge
@@ -23,7 +23,7 @@ class App extends Component {
               </div>
             </Col>
           </Row>
-        </div>
+        </Container>
       </div>
     )
   }
