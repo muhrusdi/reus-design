@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div>
         <Container md>
-          <Row gutter={10}>
+          <Row gutter={10} style={{height: 100}}>
             <Col>
               <div>
                 <Badge

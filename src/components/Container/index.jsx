@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import styles from './styles.css'
+import { css } from 'emotion'
 
 class Container extends Component {
   render() {
     const { 
       children,
       gutter,
-      fluid,
       xl,
       lg,
       md,
@@ -14,30 +13,30 @@ class Container extends Component {
     } = this.props
 
     const classes = []
-
-    if (fluid) 
-      classes.push(styles['container-fluid'])
       
     if (xl) 
-      classes.push(styles['container-xl'])
+      classes.push(`max-width: 1140px;`)
 
     if (lg) 
-      classes.push(styles['container-lg'])
+      classes.push(`max-width: 960px;`)
 
     if (md) 
-      classes.push(styles['container-md'])
+      classes.push(`max-width: 720px;`)
 
     if (sm) 
-      classes.push(styles['container-sm'])
+      classes.push(`max-width: 540px;`)
     
     return (
       <div 
-        style={{
-          paddingLeft: gutter,
-          paddingRight: gutter,
-          margin: '0 auto'
-        }}
-        className={classes.join(' ')}>
+        className={css`
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          padding-left: ${gutter ? gutter : 0}px;
+          padding-right: ${gutter ? gutter : 0}px;
+          label: container;
+          ${classes};
+        `}>
         { children }
       </div>
     )

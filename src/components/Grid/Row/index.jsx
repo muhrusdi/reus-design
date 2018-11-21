@@ -1,17 +1,19 @@
 import React from 'react'
-import styles from './styles.css'
+import { css } from 'emotion'
 
 const Row = ({children, gutter, style, justify, align}) => {
   return (
     <div 
-      style={{
-        marginLeft: gutter ? -gutter : 0,
-        marginRight: gutter ? -gutter : 0,
-        justifyContent: justify,
-        alignItems: align,
-        ...style
-      }}
-      className={styles.row}
+      className={css`
+        margin-left: ${gutter ? -gutter : 0}px;
+        margin-right: ${gutter ? -gutter : 0}px;
+        justify-content: ${justify};
+        align-items: ${align};
+        display: flex;
+        flex-wrap: wrap;
+        label: row;
+        ${style};
+      `}
     >
       { 
         typeof children === 'object' ? React.Children.map(children, child => {
