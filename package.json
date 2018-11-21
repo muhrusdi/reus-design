@@ -1,6 +1,6 @@
 {
   "name": "reus",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "UI Framework",
   "author": "muhrusdi",
   "license": "MIT",
@@ -36,6 +36,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "classnames": "^2.2.6",
     "cross-env": "^5.1.4",
+    "emotion": "^9.2.12",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
