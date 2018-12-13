@@ -1,7 +1,8 @@
+/** @jsx jsx */
 import React from 'react'
-import { css, cx } from 'emotion'
+import { css, jsx } from '@emotion/core'
 
-const Badge = ({dot, count, children, style, overflowCount}) => {
+const Badge = ({dot, count, children, overflowCount, style, className}) => {
   let child = null
   let rendered = null
 
@@ -48,37 +49,38 @@ const Badge = ({dot, count, children, style, overflowCount}) => {
 
     if (count !== 0) {
       rendered = 
-        <sup className={cx(badge, badgeDefault)}>
+        <sup css={[badge, badgeDefault]}>
           {child}
         </sup>
     }
   } else {
     rendered = 
-      <sup className={cx(badge, badgeDot)}/>
+      <sup css={[badge, badgeDot]}/>
   }
 
   return (
-    <div className={css`
-      font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
-      font-size: 14px;
-      font-variant: tabular-nums;
-      line-height: 1.5;
-      color: rgba(0,0,0,.65);
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      position: relative;
-      display: inline-block;
-      position: relative;
-      line-height: 1;
-      color: initial;
-      label: badge;
-      ${style};
-    `}>
-      {children}
-      {rendered}
-    </div>
+    <div 
+      className={className}
+      css={[css`
+        font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5;
+        color: rgba(0,0,0,.65);
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        position: relative;
+        line-height: 1;
+        color: initial;
+        label: badge;
+      `, style]}>
+        {children}
+        {rendered}
+      </div>
   )
 }
 

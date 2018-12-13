@@ -1,14 +1,17 @@
+/** @jsx jsx */
 import React from 'react'
-import { css } from 'emotion'
+import { css, jsx } from '@emotion/core'
 
-const Col = ({ 
-  style,
+const Col = ({
   children, 
   gutter,
   xl,
   lg,
   md,
-  sm
+  sm,
+  style,
+  className,
+  span
 }) => {
 
   const breakPoints = {
@@ -35,7 +38,16 @@ const Col = ({
 
   const classes = []
 
-  if (!sm && !md && !lg && !xl)
+  // if (!sm && !md && !lg && !xl && !span)
+  //   classes.push(
+  //     `
+  //     flex-basis: 0;
+  //     flex-grow: 1;
+  //     max-width: 100%;
+  //     `
+  //   )
+  
+  if (span)
     classes.push(
       `
       flex-basis: 0;
@@ -44,20 +56,8 @@ const Col = ({
       `
     )
   
-  // if (col)
-  //   var _col = cols[`col${col}`]
-  //   classes.push(
-  //     `
-  //     @media (min-width: ${breakPoints.sm}px) {
-  //       flex: 0 0 ${_col}%;
-  //       max-width: ${_col}%;
-  //     }
-  //     `
-  //   )
-  
   if (sm)
     var _col = cols[`col${sm}`]
-    console.log(sm)
     classes.push(
       `
       @media (min-width: ${breakPoints.sm}px) {
@@ -101,14 +101,15 @@ const Col = ({
     )
     
   return (
-    <div 
-      className={css(classes, {
+    <div
+      className={className}
+      css={[css(classes), {
         paddingLeft: gutter,
         paddingRight: gutter,
-        label: 'col',
-        ...style
-      })
-    }>
+        label: 'col'
+      }, style]
+    }
+    >
       { children }
     </div>
   )
