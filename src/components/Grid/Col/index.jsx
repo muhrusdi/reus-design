@@ -13,7 +13,7 @@ const Col = ({
   className,
   span
 }) => {
-
+  
   const breakPoints = {
     sm: 576,
     md: 768,
@@ -38,16 +38,24 @@ const Col = ({
 
   const classes = []
 
-  // if (!sm && !md && !lg && !xl && !span)
+  if (sm || md || lg || xl) {
+    classes.push(
+      `
+      position: relative;
+      width: 100%;
+      `
+    )
+  }
+  // if (span) {
   //   classes.push(
   //     `
-  //     flex-basis: 0;
-  //     flex-grow: 1;
-  //     max-width: 100%;
+  //     position: relative;
+  //     width: 100%;
   //     `
   //   )
-  
-  if (span)
+  // } 
+
+  if (span) {
     classes.push(
       `
       flex-basis: 0;
@@ -55,9 +63,10 @@ const Col = ({
       max-width: 100%;
       `
     )
+  } 
   
-  if (sm)
-    var _col = cols[`col${sm}`]
+  if (sm) {
+    const _col = cols[`col${sm}`]
     classes.push(
       `
       @media (min-width: ${breakPoints.sm}px) {
@@ -66,9 +75,10 @@ const Col = ({
       }
       `
     )
+  }
   
-  if (md)
-    var _col = cols[`col${md}`]
+  if (md) {
+    const _col = cols[`col${md}`]
     classes.push(
       `
       @media (min-width: ${breakPoints.md}px) {
@@ -77,9 +87,10 @@ const Col = ({
       }
       `
     )
+  }
   
-  if (lg)
-    var _col = cols[`col${lg}`]
+  if (lg) {
+    const _col = cols[`col${lg}`]
     classes.push(
       `
       @media (min-width: ${breakPoints.lg}px) {
@@ -88,9 +99,10 @@ const Col = ({
       }
       `
     )
+  }
     
-  if (xl)
-    var _col = cols[`col${xl}`]
+  if (xl) {
+    const _col = cols[`col${xl}`]
     classes.push(
       `
       @media (min-width: ${breakPoints.xl}px) {
@@ -99,7 +111,8 @@ const Col = ({
       }
       `
     )
-    
+  }
+
   return (
     <div
       className={className}

@@ -4,7 +4,7 @@ import { css, jsx } from '@emotion/core'
 
 const Typography = ({
   className,
-  tag,
+  tag = "h1",
   type,
   children,
   font,
@@ -31,13 +31,13 @@ const Typography = ({
       line-height: 1.04167;
       font-weight: 600;
       letter-spacing: -.015em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:80px;
         line-height: 1.05;
         font-weight: 600;
         letter-spacing: -.015em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:48px;
         line-height: 1.08365;
         font-weight: 600;
@@ -49,13 +49,13 @@ const Typography = ({
       line-height: 1.05;
       font-weight: 600;
       letter-spacing: -.015em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:64px;
         line-height: 1.0625;
         font-weight: 600;
         letter-spacing: -.009em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:48px;
         line-height: 1.08365;
         font-weight: 600;
@@ -67,13 +67,13 @@ const Typography = ({
       line-height: 1.0625;
       font-weight: 600;
       letter-spacing: -.009em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:48px;
         line-height: 1.08365;
         font-weight: 600;
         letter-spacing: -.003em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:40px;
         line-height: 1.1;
         font-weight: 600;
@@ -85,13 +85,13 @@ const Typography = ({
       line-height: 1.08365;
       font-weight: 600;
       letter-spacing: -.003em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:40px;
         line-height: 1.1;
         font-weight: 600;
         letter-spacing: 0em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:32px;
         line-height: 1.125;
         font-weight: 600;
@@ -103,13 +103,13 @@ const Typography = ({
       line-height: 1.1;
       font-weight: 600;
       letter-spacing: 0em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:32px;
         line-height: 1.125;
         font-weight: 600;
         letter-spacing: .004em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:28px;
         line-height: 1.14286;
         font-weight: 600;
@@ -121,13 +121,13 @@ const Typography = ({
       line-height: 1.09091;
       font-weight: 600;
       letter-spacing: -.002em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:35px;
         line-height: 1.11429;
         font-weight: 600;
         letter-spacing: .003em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:28px;
         line-height: 1.14286;
         font-weight: 600;
@@ -139,13 +139,13 @@ const Typography = ({
       line-height: 1.1;
       font-weight: 600;
       letter-spacing: 0em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:32px;
         line-height: 1.125;
         font-weight: 600;
         letter-spacing: .004em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 600;
@@ -157,13 +157,13 @@ const Typography = ({
       line-height: 1.13353;
       font-weight: 600;
       letter-spacing: .006em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:28px;
         line-height: 1.14286;
         font-weight: 600;
         letter-spacing: .007em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:22px;
         line-height: 1.18182;
         font-weight: 600;
@@ -175,13 +175,13 @@ const Typography = ({
       line-height: 1.14286;
       font-weight: 600;
       letter-spacing: .007em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 600;
         letter-spacing: .009em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:21px;
         line-height: 1.19048;
         font-weight: 600;
@@ -193,13 +193,13 @@ const Typography = ({
       line-height: 1.125;
       font-weight: 600;
       letter-spacing: .004em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:28px;
         line-height: 1.14286;
         font-weight: 600;
         letter-spacing: .007em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 600;
@@ -211,13 +211,13 @@ const Typography = ({
       line-height: 1.14286;
       font-weight: 600;
       letter-spacing: .007em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 600;
         letter-spacing: .009em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:21px;
         line-height: 1.19048;
         font-weight: 600;
@@ -229,7 +229,7 @@ const Typography = ({
       line-height: 1.16667;
       font-weight: 600;
       letter-spacing: .009em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:21px;
         line-height: 1.19048;
         font-weight: 600;
@@ -241,7 +241,7 @@ const Typography = ({
       line-height: 1.19048;
       font-weight: 600;
       letter-spacing: .011em;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:19px;
         line-height: 1.21053;
         font-weight: 600;
@@ -253,13 +253,13 @@ const Typography = ({
       line-height: 1.1;
       font-weight: 400;
       letter-spacing: 0em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:30px;
         line-height: 1.13353;
         font-weight: 400;
         letter-spacing: .006em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 400;
@@ -271,13 +271,13 @@ const Typography = ({
       line-height: 1.125;
       font-weight: 400;
       letter-spacing: .004em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:28px;
         line-height: 1.14286;
         font-weight: 400;
         letter-spacing: .007em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:22px;
         line-height: 1.18182;
         font-weight: 400;
@@ -289,13 +289,13 @@ const Typography = ({
       line-height: 1.14286;
       font-weight: 400;
       letter-spacing: .007em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 400;
         letter-spacing: .009em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:21px;
         line-height: 1.19048;
         font-weight: 400;
@@ -307,13 +307,13 @@ const Typography = ({
       line-height: 1.16667;
       font-weight: 400;
       letter-spacing: .009em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:22px;
         line-height: 1.18182;
         font-weight: 400;
         letter-spacing: .01em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:19px;
         line-height: 1.21053;
         font-weight: 400;
@@ -325,13 +325,13 @@ const Typography = ({
       line-height: 1.33349;
       font-weight: 400;
       letter-spacing: .009em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:21px;
         line-height: 1.38105;
         font-weight: 400;
         letter-spacing: .011em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size: 21px;
         line-height: 1.38105;
         font-weight: 400;
@@ -343,7 +343,7 @@ const Typography = ({
       line-height: 1.38105;
       font-weight: 400;
       letter-spacing: .011em;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:19px;
         line-height: 1.42115;
         font-weight: 400;
@@ -355,13 +355,13 @@ const Typography = ({
       line-height: 1.2;
       font-weight: 400;
       letter-spacing: 0em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:32px;
         line-height: 1.25;
         font-weight: 400;
         letter-spacing: .004em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:28px;
         line-height: 1.28595;
         font-weight: 400;
@@ -373,13 +373,13 @@ const Typography = ({
       line-height: 1.25;
       font-weight: 400;
       letter-spacing: .004em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:28px;
         line-height: 1.28595;
         font-weight: 400;
         letter-spacing: .007em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.33349;
         font-weight: 400;
@@ -391,13 +391,13 @@ const Typography = ({
       line-height: 1.125;
       font-weight: 600;
       letter-spacing: .004em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:28px;
         line-height: 1.14286;
         font-weight: 600;
         letter-spacing: .007em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.16667;
         font-weight: 600;
@@ -409,13 +409,13 @@ const Typography = ({
       line-height: 1.25;
       font-weight: 600;
       letter-spacing: .004em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:28px;
         line-height: 1.28595;
         font-weight: 600;
         letter-spacing: .007em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.33349;
         font-weight: 600;
@@ -427,13 +427,13 @@ const Typography = ({
       line-height: 1.16667;
       font-weight: 600;
       letter-spacing: .009em;
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1068px) {
         font-size:21px;
         line-height: 1.19048;
         font-weight: 600;
         letter-spacing: .011em;
       }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 735px) {
         font-size:24px;
         line-height: 1.33349;
         font-weight: 600;

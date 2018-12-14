@@ -10,7 +10,7 @@ class App extends Component {
       <div>
         <Container md gutter={10}>
           <Row gutter={10} css={css`height: 100px;`}>
-            <Col span>
+            <Col lg={6}>
               <div>
                 <Badge
                   overflowCount={4}
@@ -19,7 +19,7 @@ class App extends Component {
                 </Badge>
               </div>
             </Col>
-            <Col span>
+            <Col lg={6}>
               <div>
                 asdf
               </div>

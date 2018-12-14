@@ -11,7 +11,7 @@ const Container = ({
   sm
 }) => {
 
-  var classes = []
+  let classes = []
     
   if (xl) 
     classes.push(`max-width: 1140px;`)
