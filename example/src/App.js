@@ -52,6 +52,9 @@ class App extends Component {
               left
             </Col>
           </Row>
+          <Row>
+            <Col>adsfadf</Col>
+          </Row>
         </Container>
       </div>
     )

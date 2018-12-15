@@ -2,13 +2,15 @@
 import React from 'react'
 import { css, jsx } from '@emotion/core'
 
-const Container = ({ 
+const Container = ({
+  className,
   children,
   gutter,
   xl,
   lg,
   md,
-  sm
+  sm,
+  style
 }) => {
 
   let classes = []
@@ -27,6 +29,7 @@ const Container = ({
   
   return (
     <div 
+      className={className}
       css={[css`
         width: 100%;
         margin-right: auto;
@@ -34,7 +37,7 @@ const Container = ({
         padding-left: ${gutter ? gutter : 0}px;
         padding-right: ${gutter ? gutter : 0}px;
         label: container;
-      `, css(classes)]}>
+      `, css(classes), style]}>
       { children }
     </div>
   )

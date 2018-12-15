@@ -18,9 +18,9 @@ const Row = ({children, gutter, justify, align, style, className}) => {
       `, style]}
     >
       { 
-        React.Children.map(children, child => {
-            return React.cloneElement(child, { gutter }) 
-          })
+        typeof children !== 'object' ? React.Children.map(children, child => {
+          return React.cloneElement(child, { gutter }) 
+        }) : children
       }
     </div>
   )
@@ -29,10 +29,18 @@ const Row = ({children, gutter, justify, align, style, className}) => {
 export default Row
 
 Row.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.shape({
-    type: PropTypes.oneOfType([
-      PropTypes.func,
-      PropTypes.object
-    ])
-  }))
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.shape({
+      type: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.object
+      ])
+    })),
+    PropTypes.objectOf(PropTypes.shape({
+      type: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.object
+      ])
+    }))
+  ])
 }
