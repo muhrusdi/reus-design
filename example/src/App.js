@@ -54,6 +54,7 @@ class App extends Component {
           </Row>
           <Row>
             <Col>adsfadf</Col>
+            <Col>adsfadf</Col>
           </Row>
         </Container>
       </div>

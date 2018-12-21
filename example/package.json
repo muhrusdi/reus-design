@@ -14,9 +14,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.5",
+    "docz-theme-default": "^0.13.5",
     "react-hot-loader": "^4.3.12"
   }
 }

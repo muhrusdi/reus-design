@@ -18,7 +18,7 @@ const Row = ({children, gutter, justify, align, style, className}) => {
       `, style]}
     >
       { 
-        typeof children !== 'object' ? React.Children.map(children, child => {
+        Array.isArray(children) ? React.Children.map(children, child => {
           return React.cloneElement(child, { gutter }) 
         }) : children
       }
