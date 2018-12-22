@@ -1,0 +1,32 @@
+{
+  "config": {
+    "title": "Reus Example",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "ordering": "descending",
+    "version": "0.0.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {}
+  },
+  "entries": {
+    "src/components/Button/doc.mdx": {
+      "name": "Hello world",
+      "id": "bd32e275ddc739c74ad458e44992436f",
+      "filepath": "src/components/Button/doc.mdx",
+      "link": null,
+      "slug": "src-components-button-doc",
+      "route": "/src-components-button-doc",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "hello-world",
+          "value": "Hello world"
+        }
+      ]
+    }
+  }
+}

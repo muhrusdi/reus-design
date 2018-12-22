@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.5",
+    "docz": "^0.13.5",
     "docz-theme-default": "^0.13.5",
     "react-hot-loader": "^4.3.12"
   }
