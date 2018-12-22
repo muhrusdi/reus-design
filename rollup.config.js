@@ -29,8 +29,7 @@ export default {
     url(),
     svgr(),
     babel({
-      exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      exclude: 'node_modules/**'
     }),
     resolve({
       extensions: ['.js', '.jsx', '.css', '.scss']
