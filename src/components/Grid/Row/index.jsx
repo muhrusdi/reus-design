@@ -1,7 +1,6 @@
-/** @jsx jsx */
 import React from 'react'
-import PropTypes from 'prop-types'
-import { css, jsx } from '@emotion/core'
+import { oneOfType, arrayOf, shape, func, object, objectOf } from 'prop-types'
+import { css } from '@emotion/core'
 
 const Row = ({children, gutter, justify, align, style, className}) => {
   return (
@@ -29,17 +28,17 @@ const Row = ({children, gutter, justify, align, style, className}) => {
 export default Row
 
 Row.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.shape({
-      type: PropTypes.oneOfType([
-        PropTypes.func,
-        PropTypes.object
+  children: oneOfType([
+    arrayOf(shape({
+      type: oneOfType([
+        func,
+        object
       ])
     })),
-    PropTypes.objectOf(PropTypes.shape({
-      type: PropTypes.oneOfType([
-        PropTypes.func,
-        PropTypes.object
+    objectOf(shape({
+      type: oneOfType([
+        func,
+        object
       ])
     }))
   ])

@@ -6,8 +6,8 @@ export default ({ value }) => (
     value={value}
     options={{
       mode: 'jsx',
-      theme: 'dracula',
-      lineNumbers: true,
+      theme: 'neo',
+      lineNumbers: false,
       readOnly: true,
       showCursorWhenSelecting: false,
       cursorHeight: 0,

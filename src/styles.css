@@ -12,3 +12,42 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body,input,textarea,select,button {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+}
+
+h1+*,h2+*,h3+*,h4+*,h5+*,h6+* {
+  margin-top: .8em
+}
+
+p+h1,ul+h1,ol+h1,p+h2,ul+h2,ol+h2,p+h3,ul+h3,ol+h3,p+h4,ul+h4,ol+h4,p+h5,ul+h5,ol+h5,p+h6,ul+h6,ol+h6 {
+  margin-top: 1.6em
+}
+
+p+*,ul+*,ol+* {
+  margin-top: .8em
+}
+
+ul ul,ul ol,ol ul,ol ol {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+nav ul,nav ol {
+  margin: 0;
+  list-style: none
+}
+
+a {
+    color: #0070c9
+}
+
+p+a {
+  display: inline-block
+}

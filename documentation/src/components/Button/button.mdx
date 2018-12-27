@@ -1,0 +1,133 @@
+---
+name: Button
+route: /button
+---
+
+import { Button } from 'reus'
+import { css } from '@emotion/core'
+import CodeMirror from '../Codemirror'
+import { StyledButton, Section, SubSection } from '../'
+
+# Button
+
+Easy-to use button components.
+
+## Type
+
+<p>
+  To define the type of button the directive is used <code>type</code> with the value of some type of button like it can be: <code>primary</code>.
+</p>
+
+<Section>
+  <SubSection>
+    <StyledButton>
+      <Button>Default</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button type="primary">Primary</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button type="success">Success</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button type="warning">Warning</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button type="danger">Danger</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button disabled type="primary">Primary Disabled</Button>
+    </StyledButton>
+  </SubSection>
+
+  <CodeMirror value={
+  `<Button>Default</Button>
+<Button type="primary">Primary</Button>
+<Button type="success">Success</Button>
+<Button type="warning">Warning</Button>
+<Button type="danger">Danger</Button>
+<Button disabled type="primary">Primary Disabled</Button>`}/></Section>
+
+## Size
+
+<Section>
+  <SubSection>
+    <StyledButton>
+      <Button size="large">Default</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="large" type="primary">Primary</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="large" type="success">Success</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="large" type="warning">Warning</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="large" type="danger">Danger</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="large" disabled type="primary">Primary Disabled</Button>
+    </StyledButton>
+  </SubSection>
+
+  <CodeMirror value={`<Button>Default</Button>
+<Button size="large" type="primary">Primary</Button>
+<Button size="large" type="success">Success</Button>
+<Button size="large" type="warning">Warning</Button>
+<Button size="large" type="danger">Danger</Button>
+<Button size="large" disabled type="primary">Primary Disabled</Button>`}/>
+</Section>
+
+<Section>
+  <SubSection>
+    <StyledButton>
+      <Button size="small">Default</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="small" type="primary">Primary</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="small" type="success">Success</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="small" type="warning">Warning</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="small" type="danger">Danger</Button>
+    </StyledButton>
+    <StyledButton>
+      <Button size="small" disabled type="primary">Primary Disabled</Button>
+    </StyledButton>
+  </SubSection>
+
+  <CodeMirror value={
+  `<Button>Default</Button>
+<Button size="small" type="primary">Primary</Button>
+<Button size="small" type="success">Success</Button>
+<Button size="small" type="warning">Warning</Button>
+<Button size="small" type="danger">Danger</Button>
+<Button size="small" disabled type="primary">Primary Disabled</Button>`}/>
+</Section>
+
+## API
+
+<p>
+  To get a customized button component, just set 
+  <code>
+    type
+  </code>, 
+  <code>
+    size
+  </code>, 
+  <code>
+    disabled
+  </code>.
+</p>
+
+| Property                  | Default | Description |
+| ------------------------- | ------- | -----------
+| type           | default | 
+| size           | default |
+| disabled           | default |  

@@ -3,6 +3,7 @@ import Container from './components/Container'
 import Col from './components/Grid/Col'
 import Badge from './components/Badge'
 import Typography from './components/Typography'
+import Button from './components/Button'
 import './styles.css'
 
-export { Badge, Container, Row, Col, Typography }
+export { Badge, Button, Container, Row, Col, Typography }

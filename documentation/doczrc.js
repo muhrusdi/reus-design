@@ -9,7 +9,7 @@ export default {
       links: [
         {
           rel: 'stylesheet',
-          href: 'https://codemirror.net/theme/dracula.css',
+          href: 'https://codemirror.net/theme/neo.css',
         },
       ],
       raw: `
@@ -34,7 +34,7 @@ export default {
         }
         #root > div > div:first-of-type > div:first-of-type > div:nth-child(2) h1 {
           font-size: 2.5em;
-          font-weight: 100;
+          font-weight: bold;
         }
         .scrollbar-container {
           max-height: unset!important;
@@ -42,6 +42,15 @@ export default {
         .CodeMirror {
           font-size: 14px;
           height: 100%!important;
+        }
+        .cm-s-neo .cm-node, .cm-s-neo .cm-tag {
+          color: #ca26c2;
+        }
+        .cm-s-neo .cm-attribute {
+          color: #27b1a0;
+        }
+        .cm-s-neo .cm-string {
+          color: #3197cc;
         }
         .CodeMirror pre {
           line-height: 20.8px!important;
@@ -54,6 +63,7 @@ export default {
         }
         .CodeMirror-linenumber {
           padding: 0 7px 0 5px!important;
+          color: #adadad;
         }
         .code-table {
           display: flex;
@@ -116,6 +126,7 @@ export default {
           color: rgb(31, 182, 255);
           text-decoration: none;
           cursor: pointer;
+          font-weight: normal !important;
         }
       </style>
       `,
@@ -135,7 +146,8 @@ export default {
       },
       h1: {
         fontSize: '4em',
-        fontWeight: 800,
+        fontFamily:
+          '-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif',
       },
     },
   },

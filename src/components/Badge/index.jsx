@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react'
-import { css, jsx } from '@emotion/core'
+import { css } from '@emotion/core'
 
 const Badge = ({dot, count, children, overflowCount, style, className}) => {
   let child = null

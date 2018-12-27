@@ -1,8 +1,7 @@
-/** @jsx jsx */
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader'
-import { Row, Container, Col, Badge, Typography } from 'reus'
-import { css, jsx } from '@emotion/core'
+import { Row, Container, Col, Badge, Typography, Button } from 'reus'
+import { css } from '@emotion/core'
 
 class App extends Component {
   render () {
@@ -21,7 +20,30 @@ class App extends Component {
             </Col>
             <Col lg={6}>
               <div>
-                asdf
+                <Button>Default</Button>
+                <Button type="primary">Primary</Button>
+                <Button type="danger">Danger</Button>
+                <Button type="success">Success</Button>
+                <Button type="warning">Warning</Button>
+                <Button type="primary" disabled>Primary Disabled</Button>
+              </div>
+            </Col>
+          </Row>
+          <Row gutter={10} css={css`height: 100px;`}>
+            <Col lg={6}>
+              <div>
+                <Badge
+                  overflowCount={4}
+                  css={{margin: 10}} count={19}>
+                  <a>test</a>
+                </Badge>
+              </div>
+            </Col>
+            <Col lg={6}>
+              <div>
+                <Button>Default</Button>
+                <Button type="primary" size="large">Primary</Button>
+                <Button type="danger" size="small">Danger</Button>
               </div>
             </Col>
           </Row>
@@ -35,18 +57,6 @@ class App extends Component {
               <Typography tag="h1" type="headline-standalone">
                 Headline Standalone
               </Typography>
-              <Typography tag="h1" type="headline-super">
-                Headline Super
-              </Typography>
-              <Typography font="Menlo" color="#fff" tag="h1" type="headline-elevated">
-                Headline Elevated
-              </Typography>
-                className,
-                <Typography 
-                  tag="h2" 
-                  type="headline"
-                  color={css`color: blue;`}
-                  align="center">Simple Human Resource system : Database, Payroll, Lending. We have it all!</Typography>
             </Col>
             <Col style={{background: '#666'}}>
               left
