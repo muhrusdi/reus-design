@@ -10,7 +10,9 @@ import { Typography } from 'reus'
 import CodeMirror from '../Codemirror'
 import TypographyWrapper from './index.jsx'
 
-Beautiful typographic styles can be made by setting base type size, line-height (leading) and measure (max-width).
+<div>
+  Beautiful typographic styles can be made by setting base type size, line-height (leading) and measure (max-width).
+</div>
 
 <Typography
   tag="h2"
@@ -460,3 +462,48 @@ Beautiful typographic styles can be made by setting base type size, line-height 
 >
   Typography Sosumi
 </Typography>`}/>
+
+## Ellipsis
+
+<Typography
+  tag="p"
+  ellipsis={1}
+  type="tout"
+>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur similique dignissimos vitae vero nulla molestias nesciunt asperiores, cum quos harum accusamus facilis cumque sint iste perferendis eveniet ea. Dolor, sunt.
+</Typography>
+
+<CodeMirror value={`<Typography
+  tag="p"
+  ellipsis={1}
+  type="tout"
+>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur similique dignissimos vitae vero nulla molestias nesciunt asperiores, cum quos harum accusamus facilis cumque sint iste perferendis eveniet ea. Dolor, sunt.
+</Typography>`}/>
+
+<Typography
+  tag="p"
+  ellipsis={2}
+  type="tout"
+>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur similique dignissimos vitae vero nulla molestias nesciunt asperiores, cum quos harum accusamus facilis cumque sint iste perferendis eveniet ea. Dolor, sunt.
+</Typography>
+
+<CodeMirror value={`<Typography
+  tag="p"
+  ellipsis={2}
+  type="tout"
+>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur similique dignissimos vitae vero nulla molestias nesciunt asperiores, cum quos harum accusamus facilis cumque sint iste perferendis eveniet ea. Dolor, sunt.
+</Typography>`}/>
+
+## API
+
+| Property                  | Default | Description |
+| ------------------------- | ------- | -----------
+| tag           | h1 | 
+| type           | default |
+| align           | default |  
+| color           | default |  
+| style           | default |  
+| ellipsis           | default |  

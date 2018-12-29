@@ -42,6 +42,7 @@ export default {
         .CodeMirror {
           font-size: 14px;
           height: 100%!important;
+          margin-bottom: 40px;
         }
         .cm-s-neo .cm-node, .cm-s-neo .cm-tag {
           color: #ca26c2;

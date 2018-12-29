@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react'
-import { css, jsx } from '@emotion/core'
+import { css } from '@emotion/core'
 
 const Typography = ({
   className,
@@ -11,8 +10,8 @@ const Typography = ({
   color,
   weight,
   align,
+  ellipsis,
   style}) => {
-  const Element = tag
 
   let fontFamily
   if (font) {
@@ -471,11 +470,31 @@ const Typography = ({
       letter-spacing: -.008em;
     `,
   }
+
+  let Element = tag
+  let _children = children
+  let _ellipsisStyle
+  let spreadStyle = {
+    className: className,
+    css: [typographyType[type], _styles, style]
+  }
+
+  if (ellipsis) {
+    Element = 'div'
+    const ChildElement = tag
+    _children = <ChildElement {...spreadStyle}>{children}</ChildElement>
+    _ellipsisStyle = css`
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: ${ellipsis};
+      -webkit-box-orient: vertical;  
+    `
+    spreadStyle.css = [_ellipsisStyle]
+  }
+
   return (
-    <Element
-      className={className}
-      css={[typographyType[type], _styles, style]}>
-      { children }
+    <Element {...spreadStyle}>
+      { _children }
     </Element>
   )
 }
