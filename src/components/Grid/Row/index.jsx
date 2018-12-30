@@ -1,6 +1,7 @@
 import React from 'react'
 import { oneOfType, arrayOf, shape, func, object, objectOf } from 'prop-types'
 import { css } from '@emotion/core'
+import '../../../styles.css'
 
 const Row = ({children, gutter, justify, align, style, className}) => {
   return (

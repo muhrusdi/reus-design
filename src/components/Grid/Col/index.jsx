@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
+import '../../../styles.css'
 
 const Col = ({
   children, 
