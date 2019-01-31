@@ -1,4 +1,8 @@
-html {
+import { Global, css } from '@emotion/core'
+
+const GlobalStyles = () => (
+  <Global styles={css`
+   html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
@@ -133,3 +137,7 @@ a {
 p+a {
   display: inline-block
 }
+  `}/>
+)
+
+export default GlobalStyles

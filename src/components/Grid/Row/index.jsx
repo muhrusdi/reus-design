@@ -1,12 +1,10 @@
 import React from 'react'
 import { oneOfType, arrayOf, shape, func, object, objectOf } from 'prop-types'
 import { css } from '@emotion/core'
-import '../../../styles.css'
 
-const Row = ({children, gutter, justify, align, style, className}) => {
+const Row = ({children, gutter, justify, align, style, ...props}) => {
   return (
-    <div 
-      className={className}
+    <div
       css={[css`
         margin-left: ${gutter ? -gutter : 0}px;
         margin-right: ${gutter ? -gutter : 0}px;
@@ -16,6 +14,7 @@ const Row = ({children, gutter, justify, align, style, className}) => {
         flex-wrap: wrap;
         label: row;
       `, style]}
+      {...props}
     >
       { 
         Array.isArray(children) ? React.Children.map(children, child => {

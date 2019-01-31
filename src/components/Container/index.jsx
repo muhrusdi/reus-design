@@ -1,11 +1,10 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import '../../styles.css'
 
 const Container = ({
   className,
   children,
-  gutter,
+  gutter = 16,
   xl,
   lg,
   md,
@@ -34,8 +33,8 @@ const Container = ({
         width: 100%;
         margin-right: auto;
         margin-left: auto;
-        padding-left: ${gutter ? gutter : 0}px;
-        padding-right: ${gutter ? gutter : 0}px;
+        padding-left: ${gutter}px;
+        padding-right: ${gutter}px;
         label: container;
       `, css(classes), style]}>
       { children }

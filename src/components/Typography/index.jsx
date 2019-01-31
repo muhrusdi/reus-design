@@ -4,11 +4,12 @@ import { css } from '@emotion/core'
 const Typography = ({
   className,
   tag = "h1",
-  type,
+  type = "headline",
   children,
   font,
   color,
   size,
+  as = "h1",
   weight,
   align,
   ellipsis,
@@ -533,15 +534,16 @@ const Typography = ({
   }
 
   let _reset
+  const _as = tag || as
 
   if (
-    tag === 'h1' ||
-    tag === 'h2' ||
-    tag === 'h3' ||
-    tag === 'h4' ||
-    tag === 'h5' ||
-    tag === 'h6' || 
-    tag === 'p'
+    _as === 'h1' ||
+    _as === 'h2' ||
+    _as === 'h3' ||
+    _as === 'h4' ||
+    _as === 'h5' ||
+    _as === 'h6' || 
+    _as === 'p'
   ) {
     _reset = css`
       & + * {
@@ -550,7 +552,7 @@ const Typography = ({
     `
   }
 
-  let Element = tag
+  let Element = _as
   let _children = children
   let _ellipsisStyle
   let spreadStyle = {
@@ -560,7 +562,7 @@ const Typography = ({
 
   if (ellipsis) {
     Element = 'div'
-    const ChildElement = tag
+    const ChildElement = _as
     _children = <ChildElement {...spreadStyle}>{children}</ChildElement>
     _ellipsisStyle = css`
       display: -webkit-box;

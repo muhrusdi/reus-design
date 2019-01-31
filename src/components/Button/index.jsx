@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
-import '../../styles.css'
 
 const Button = ({children, type, size, disabled, ...props}) => {
   const _default = css`

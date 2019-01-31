@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import '../../../styles.css'
 
 const Col = ({
   children, 
@@ -10,8 +9,8 @@ const Col = ({
   md,
   sm,
   style,
-  className,
-  span
+  span,
+  ...props
 }) => {
   
   const breakPoints = {
@@ -115,13 +114,13 @@ const Col = ({
 
   return (
     <div
-      className={className}
       css={[css(classes), {
         paddingLeft: gutter,
         paddingRight: gutter,
         label: 'col'
       }, style]
     }
+    {...props}
     >
       { children }
     </div>

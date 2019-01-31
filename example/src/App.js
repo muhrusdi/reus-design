@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader'
-import { Row, Container, Col, Badge, Typography, Button } from 'reus'
+import { Row, Container, Col, Badge, Typography, Button, Icon } from 'reus'
 import { css } from '@emotion/core'
 
 class App extends Component {
@@ -64,7 +64,9 @@ class App extends Component {
           </Row>
           <Row>
             <Col>adsfadf</Col>
-            <Col>adsfadf</Col>
+            <Col>
+              <Icon type="light"/>
+            </Col>
           </Row>
         </Container>
       </div>
