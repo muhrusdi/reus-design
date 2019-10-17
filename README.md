@@ -15,12 +15,12 @@ npm install --save reus
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'reus'
+import { Button } from 'reus'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Button type="primary">Submit</Button>
     )
   }
 }
